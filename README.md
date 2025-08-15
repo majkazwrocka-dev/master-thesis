@@ -1,49 +1,42 @@
-# sample-thesis-project
+#      Evaluating Historical Language Models for literary research
 This repository contains the research done as part of my thesis.
 
-# Overview
-This repository assumes a Python project, with an Open License (MIT style). If any of these aspects are different from your project please make sure to change those accordingly.
-Please feel free to clone/fork this repository and use it as a template for your thesis.
+# Structure
 
-# Project structure
+- the data folder contains all the used data:
+  files for the token-level experiments:
+  eng-danc.json
+  eng-fina.json
+  eng-houn.json
+  eng-nava.json
+  eng-redh.json
+  eng-scan.json
+  eng-spec.json
+  file for the sentence-level experiments:
+  speckled-band-chunk-sentiment.json
+  and the modern benchmark:
+  test_benchmark.csv
+  train_benchmark.csv
 
-```
-thesis-project
-└───data
-│       │   sample_data.csv 
-└───results
-│       │   sample_results.png 
-└───src
-│   └───utils
-│       │   plotting.py
-│   │   main.py
-│   .gitignore
-│   LICENSE
-│   README.md
-│   requirements.tx
-```
+- the token-level experiment is contained in the folder by the same name inside there are:
+    notebooks that explore the data: BERT-explore, BERT-explore2, BERT-token_positive, neutral_interval, token_level_exploration
+    notebooks with BERT doing sentiment analysis: BERT-token_system and BERT-token_system-seeds
+    notebooks with TuringBERT doing sentiment analysis: TuringBERT-token_system and TuringBERT-token_system-seeds
+    files with results (the csv files)
 
-# To Do
-Once you start, please go through the following steps to tailor this template to your project
+- the sentence-level experiment is contained in the folder by the same name inside there are:
+    notebooks with BERT doing sentiment analysis on the modern benchmark: BERT-benchmark and BERT-benchmark-seeds
+    notebooks with BERT doing sentiment analysis on the historical benchmark: 10cross_BERT_sentence_level and 10cross_BERT_sentence_level-seeds
+    notebooks with TuringBERT doing sentiment analysis on the modern benchmark: TuringBERT-benchmark and TuringBERT-benchmark-seeds
+    notebooks with TuringBERT doing sentiment analysis on the historical benchmark: 10cross_TuringBERT_sentence_level and 10cross_TuringBERT_sentence_level-seeds
+    files with results (the tsv files)
+  
+- the thesis report
 
 ## Thesis report
 You may decide to upload your report here directly, or to simply add a reference to where the report is hosted (e.g. Overleaf)
 - [ ] Add a reference to the thesis report
 
-## Data 
-To ensure reproducibility, Yu need to provide the data your project uses.
-- [ ] Add your data in the data folder
-
-Sometimes, sharing sharing data is not straightforward. For example, there may be restrictions regarding with whom or how you can share the data you have. Some other times, the data you are using is open and easily accessible from other sites, in which case you might want to point directly to the original source. Either way, if this is the case for you please 
-- [ ] Add the data folder to ``.gitignore`` in order to avoid commiting these files to Github. For this you can simply uncomment the last line in the ``.gitignore`` file  
-```
-# Tailored ignored files
-data/*
-```
-- [ ] Make sure to add a ``README.md`` file inside the data folder, where you explain in detail how to obtain and structure the data
-
-## README
-- [ ] Add instructions on how to set up the project, how to run your code and what to expect as an output.
 
 
 
