@@ -33,9 +33,9 @@ This repository contains the research done as part of my thesis.
   
 - the thesis report
 
-## Thesis report
-You may decide to upload your report here directly, or to simply add a reference to where the report is hosted (e.g. Overleaf)
-- [ ] Add a reference to the thesis report
+Running the code might require importing some common packages, they are all mentioned in the begging of each notebook.
+
+You must have the BERT model and a TuringBERT model downloaded.
 
 
 
