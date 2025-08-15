@@ -1,5 +1,5 @@
 # sample-thesis-project
-This repository is an example for the structure and content that a CLTL thesis project may have. 
+This repository contains the research done as part of my thesis.
 
 # Overview
 This repository assumes a Python project, with an Open License (MIT style). If any of these aspects are different from your project please make sure to change those accordingly.
